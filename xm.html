@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Круговий текст та центрування зображення</title>
+    <style>
+      /* Центрування всього контенту */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #f4f4f4;
+      }
+
+      /* Контейнер для тексту */
+      .circle-container {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Текст по колу */
+      .circle-text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      .circle-text span {
+        position: absolute;
+        transform-origin: center 100px;
+      }
+
+      /* Розміщення кожної літери */
+      .circle-text span:nth-child(1) {
+        transform: rotate(0deg);
+      }
+      .circle-text span:nth-child(2) {
+        transform: rotate(30deg);
+      }
+      .circle-text span:nth-child(3) {
+        transform: rotate(60deg);
+      }
+      .circle-text span:nth-child(4) {
+        transform: rotate(90deg);
+      }
+      .circle-text span:nth-child(5) {
+        transform: rotate(120deg);
+      }
+      .circle-text span:nth-child(6) {
+        transform: rotate(150deg);
+      }
+      .circle-text span:nth-child(7) {
+        transform: rotate(180deg);
+      }
+
+      /* Контейнер для зображення */
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+
+      /* Центроване зображення */
+      .image-container img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Текст по колу -->
+    <div class="circle-container">
+      <div class="circle-text">
+        <span>L</span>
+        <span>O</span>
+        <span>G</span>
+        <span>O</span>
+        <span>-</span>
+        <span>T</span>
+        <span>E</span>
+      </div>
+    </div>
+
+    <!-- Центроване зображення -->
+    <div class="image-container">
+      <img src="./assets/image/icon/instagram.svg" alt="Логотип" />
+    </div>
+  </body>
+</html>
