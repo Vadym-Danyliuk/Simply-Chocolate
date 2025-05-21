@@ -1,0 +1,154 @@
+:root {
+  --head-font: "Montserrat", sans-serif;
+  --head-black: #111111;
+  --accent-black: #1e1823;
+  --protec-grey: #4c4c4c;
+  --accent-orange: #fd9222;
+  --hover-ligth: #fcf1e0;
+  --head-bacgraund: #fafafa;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+a {
+  text-decoration: none;
+  font-weight: inherit;
+  color: inherit;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--head-bacgraund);
+  font-weight: 700;
+  font-size: 14px;
+}
+.container {
+  max-width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+img {
+  display: block;
+}
+
+/* header */
+.container.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.head-logo {
+  font-style: italic;
+}
+.head-logo-acc {
+  font-style: normal;
+}
+.menu {
+}
+.menu-block {
+  display: flex;
+  gap: 24px;
+}
+.menu-item {
+}
+.menu-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.social {
+}
+.social-blok {
+  display: flex;
+  gap: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.social-item {
+  border: 1px solid #4c4c4c;
+  border-radius: 10px;
+  padding: 8px;
+}
+.social-link {
+}
+/*  */
+.hero {
+}
+.hero-wrapper {
+  background-color: var(--protec-grey);
+  border-radius: 30px;
+  color: var(--head-bacgraund);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 381px;
+  margin-bottom: 80px;
+}
+
+.head-intro {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 121%;
+  letter-spacing: -0.03em;
+  max-width: 484px;
+  margin-bottom: 40px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  align-items: center;
+}
+.btn-block {
+  display: flex;
+  gap: 14px;
+}
+.btn-buy-nav {
+}
+.benefits-intro {
+}
+.benefits {
+}
+.benefits-blok {
+}
+.benefits-img {
+}
+.benefits-title {
+}
+.benefits-text {
+}
