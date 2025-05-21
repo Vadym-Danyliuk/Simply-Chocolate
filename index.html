@@ -4,43 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
     <!-- Header  -->
     <header>
-      <div class="container">
-        <a href="" class="head-logo"><span>SIMPLY</span> CHOCOLATE</a>
-        <nav class="menu">
-          <ul class="menu-block">
-            <li class="menu-item"><a href="" class="menu link">Home</a></li>
-            <li class="menu-item">
-              <a href="" class="menu link">How it’s made?</a>
-            </li>
-            <li class="menu-item">
-              <a href="" class="menu link">Chocolate is loved</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="social">
-          <ul class="social-blok">
-            <li class="social-item">
-              <a href="" class="social-link"
-                ><img src="./assets/image/icon/fb.svg" alt="link fb "
-              /></a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link"
-                ><img
-                  src="./assets/image/icon/instagram.svg"
-                  alt="link instagram"
-              /></a>
-            </li>
-            <li class="social-item">
-              <a href="" class="social-link"
-                ><img src="./assets/image/icon/twitter.svg" alt="link twitter"
-              /></a>
-            </li>
-          </ul>
+      <div class="container head">
+        <a href="" class="head-logo"
+          >SIMPLY <span class="head-logo-acc">CHOCOLATE</span></a
+        >
+        <div class="wrapper">
+          <nav class="menu">
+            <ul class="menu-block">
+              <li class="menu-item"><a href="" class="menu-link">Home</a></li>
+              <li class="menu-item">
+                <a href="" class="menu-link">How it’s made?</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social">
+            <ul class="social-blok">
+              <li class="social-item">
+                <a href="" class="social-link"
+                  ><img src="./assets/image/icon/fb.svg" alt="link fb "
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link"
+                  ><img
+                    src="./assets/image/icon/instagram.svg"
+                    alt="link instagram"
+                /></a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link"
+                  ><img
+                    src="./assets/image/icon/twitter.svg"
+                    alt="link twitter"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -48,21 +65,27 @@
       <!-- /Header -->
       <!-- Hero -->
       <section>
-        <div class="container">
-          <h1 class="head-intro">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-          <button class="btn buy-nav">Buy now</button>
-          <a href="" class="abtn-made">How it’s made</a>
-          <a href="" class="abtn-scrol">scroll down</a>
+        <div class="container hero">
+          <div class="hero-wrapper">
+            <h1 class="head-intro">
+              Treat yourself or a loved one to <br />
+              our finest ingredients for a moment of pure delight!
+            </h1>
+            <div class="btn-wrapper">
+              <div class="btn-block">
+                <button class="btn-buy-nav">Buy now</button>
+                <a href="" class="abtn-made">How it’s made</a>
+              </div>
+              <a href="" class="abtn-scrol">scroll down</a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- /Hero -->
       <!-- Benefits -->
-      <section>
+      <section class="bg-full-sz">
         <div class="container">
-          <h2 class="benefits-intro">текст який треба скрити</h2>
+          <h2 class="visually-hidden">текст який треба скрити</h2>
           <ul class="benefits">
             <li class="benefits-blok">
               <img
@@ -117,6 +140,11 @@
       <!-- Ingridients -->
       <section>
         <div class="container">
+          <h2 class="ingridients-intro">
+            It all adds up to one <br />
+            exceptional
+            <span class="ingridients-intro-acc">taste</span> sensation
+          </h2>
           <ul class="ingridients">
             <li class="ingridients-bloc">
               <img
