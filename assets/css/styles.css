@@ -25,6 +25,7 @@ li {
   padding: 0;
   color: inherit;
 }
+
 a {
   text-decoration: none;
   font-weight: inherit;
@@ -44,6 +45,8 @@ a {
 }
 button {
   cursor: pointer;
+  border: none;
+  background: none;
 }
 img {
   display: block;
@@ -60,6 +63,25 @@ body {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+}
+/* h2 section */
+.recipe-intro,
+.ingridients-intro,
+.sellers-intro,
+.products-intro {
+  width: 486px;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.ingridients-intro-acc,
+.recipe-acc,
+.sellers-acc,
+.products-acc {
+  color: var(--accent-orange);
 }
 
 /* header */
@@ -103,14 +125,17 @@ body {
   border: 1px solid #4c4c4c;
   border-radius: 10px;
   padding: 8px;
+  color: #fd9222;
 }
-.social-link {
+.test {
+  color: #fd9222;
 }
 /*  */
 .hero {
 }
 .hero-wrapper {
-  background-color: var(--protec-grey);
+  background: linear-gradient(rgba(17, 17, 17, 0.4)),
+    url(/assets/image/img/hero-bg@2x.jpg);
   border-radius: 30px;
   color: var(--head-bacgraund);
   padding-left: 40px;
@@ -145,8 +170,15 @@ body {
   border-radius: 100px;
   color: #fafafa;
   border: none;
-  background-color: #fd9222;
+  background-color: var(--accent-orange);
   font-weight: 700;
+}
+.btn-buy-nav:hover {
+  transition: border 0.5s ease-in-out;
+  color: #fd9222;
+  background-color: rgba(252, 241, 224, 1);
+  transition: border 0.5s ease-in-out, background-color 0.5s ease-in-out,
+    color 0.5s ease-in-out;
 }
 
 .abtn-made {
@@ -154,9 +186,30 @@ body {
   border-radius: 100px;
   border: 1px solid var(--hover-ligth);
 }
-.abtn-scrol {
+.abtn-made:hover {
+  transition: border 0.5s ease-in-out;
+  color: var(--accent-orange);
+  border: 1px solid var(--accent-orange);
+  transition: border 0.5s ease-in-out, color 0.5s ease-in-out;
 }
-/*  */
+
+.abtn-scrol {
+  position: relative;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  transition: border 0.5s ease-in-out;
+}
+.abtn-scrol::after {
+  content: url(/assets/image/icon/scrol-down.png);
+  position: absolute; /* Абсолютне позиціонування */
+
+  width: 24px; /* Встановлення розміру */
+}
+.abtn-scrol:hover {
+  border-color: var(--hover-ligth);
+}
+/* benefits */
 .bg-full-sz {
   background-color: #1e1823;
   color: #ffffff;
@@ -174,6 +227,8 @@ body {
   padding-right: 15px;
 }
 .benefits-blok {
+  min-height: 168px;
+  min-width: 188px;
 }
 .benefits-img {
   width: 62px;
@@ -189,19 +244,13 @@ body {
   margin-bottom: 50px;
   color: rgba(225, 225, 255, 0.7);
 }
-/*  */
-.container {
-}
-.ingridients-intro {
-  font-size: 24px;
-  line-height: 28px;
-  margin: 0 auto;
-}
-.ingridients-intro-acc {
-  color: var(--accent-orange);
+/* /benefits */
+
+/* ingridients */
+.ingridients-padd {
+  margin-bottom: 120px;
 }
 .ingridients {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -209,9 +258,9 @@ body {
 .ingridients-bloc {
   width: 260px;
   height: 270px;
-
   background-color: #fd9222;
-  border-radius: 30px;
+  border-radius: 15px;
+  padding: 28px 23px;
 }
 .ingridients-bloc:nth-child(1),
 .ingridients-bloc:nth-child(5) {
@@ -226,10 +275,101 @@ body {
 
 .ingridients-bloc:nth-child(2),
 .ingridients-bloc:nth-child(4),
-.ingridients-bloc:nth-child(6) .ingridients-bloc:nth-child(8) {
+.ingridients-bloc:nth-child(6) {
   background-color: transparent;
+  border: 1px solid var(--accent-orange);
 }
 .ingridients-img {
+  margin: 0 auto;
+  width: 214px;
 }
 .ingridients-name {
+  font-size: 14px;
+  margin-top: 36px;
 }
+/* /ingridients */
+
+/* how it's made */
+
+.recipe-wrapper {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 120px;
+}
+.recipe-blok-img {
+}
+.recipe-img {
+  min-width: 600px;
+  height: 400px;
+}
+.recipe-blok-steps {
+  padding: 32px;
+  text-align: start;
+  min-width: 400px;
+}
+.recipe-steps {
+  margin-bottom: 28px;
+}
+.steps-blok {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.steps-iten {
+}
+.steps-iten::before {
+  content: url(/assets/image/icon/Ellipse.png);
+}
+
+.recipe-text {
+}
+
+/* /how it's made */
+/* products */
+
+.products-bloc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.products-card {
+  width: 270px;
+  height: 364px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition: border 0.5s ease-in-out;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.products-card:hover {
+  border-color: rgba(17, 17, 17, 0.3);
+  border-radius: 15px;
+}
+.products-img {
+  margin-bottom: 8px;
+}
+.products-name {
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.products-type {
+  margin-bottom: 18px;
+}
+.products-buy {
+  background: rgba(250, 250, 250, 1);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  transition: border 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.products-buy:hover {
+  border-color: rgba(17, 17, 17, 0.3);
+  background-color: rgba(252, 241, 224, 1);
+}
+/* /products */
